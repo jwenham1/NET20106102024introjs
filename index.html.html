@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Experiments with JavaScript</title>
+    <script>
+    console.log("start of the page")
+
+    function show(){
+        let x = 0;
+        let maxcount = 1000;
+        console.log("Button pressed");
+        document.getElementById('partB').style.display = 'block'; 
+        while (x<maxcount){
+        document.getElementById('partB').innerHTML+="<h4>ouch!!</h4>";
+        x = x+1;
+        }
+    }
+    
+    </script>
+    </head>
+    <body>
+        <div id="partA">
+        <h1>cause</h1>
+        <button onclick="show()">please dont press</button>
+        <script>
+       console.log("made it to partA");
+       
+
+       </script> 
+       </div>
+<!-- divider -->
+<div id="partB" style="display:none;">
+<h2>effect</h2>
+<script>
+console.log("made it to partB");
+</script>
+</div>
+    </body>
+
+</html>
